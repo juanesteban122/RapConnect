@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+}
+
+header a h1 {
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rapper-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px; /* Espacio adicional para el footer fijo */
+}
+
+.rapper {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.rapper .description {
+    max-height: 170px;
+    overflow-y: auto;
+    padding: 0 10px;
+}
+
+.rapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rapper h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+
+.rapper .links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px; /* Espacio hacia abajo entre la descripción y los enlaces */
+}
+
+.rapper a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.rapper a.spotify {
+    color: #1DB954;
+    border: 1px solid #1DB954;
+    border-radius: 50%;
+}
+
+.rapper a.youtube {
+    color: #FF0000;
+    border: 1px solid #FF0000;
+}
+
+.rapper a:hover {
+    text-decoration: underline;
+}
+
+.rapper a.spotify:hover {
+    color: #ffffff;
+    background-color: #1DB954;
+}
+
+.rapper a.youtube:hover {
+    color: #ffffff;
+    background-color: #FF0000;
+}
+
+
