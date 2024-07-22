@@ -1,0 +1,21 @@
+/* Estilo general para centrar el contenido en el contenedor */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Ocupa el 80% de la altura de la pantalla */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.btn-danger {
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}

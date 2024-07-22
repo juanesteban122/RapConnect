@@ -24,8 +24,8 @@
                 echo '<h2>' . $row['nombre'] . '</h2>';
                 echo '<div class="description">' . $row['descripcion'] . '</div>';
                 echo '<br>';
-                echo '<a class="spotify" href="' . $row['spotify'] . '">Spotify</a> | ';
-                echo '<a class="youtube" href="' . $row['youtube'] . '">YouTube</a>';
+                echo '<a class="spotify" href="' . $row['spotify'] . '" target="_blank">Spotify</a> | ';
+                echo '<a class="youtube" href="' . $row['youtube'] . '" target="_blank">YouTube</a>';
                 echo '</div>';
             }
         } else {
