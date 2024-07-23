@@ -1,0 +1,80 @@
+/* Estilos generales para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor del formulario */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Estilo del título */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para el grupo de formulario */
+.form-group {
+    width: 100%;
+    max-width: 500px; /* Ancho máximo del grupo de formulario */
+    margin-bottom: 15px;
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Estilo para el campo de selección */
+.form-control {
+    display: block;
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    max-width: 100%; /* Asegura que no se haga más grande que el contenedor */
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilo para los botones */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    color: #212529;
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
