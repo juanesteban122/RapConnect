@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($conn->query($sql) === TRUE) {
                 echo "<script>
                 alert('Se agregó el rapero correctamente');
-                window.location.href = '/RapConnect/index.php';
+            window.location.href = '../index.php';
                 </script>";
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
