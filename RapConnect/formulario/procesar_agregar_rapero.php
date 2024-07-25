@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Inserta en la base de datos
                 $sql = "INSERT INTO raperos (nombre, descripcion, spotify, youtube, image) VALUES ('$nombre', '$descripcion', '$spotify', '$youtube', '$imageName')";
 
+<<<<<<< HEAD:RapConnect/formulario/procesar_agregar_rapero.php
                 if ($conn->query($sql) === TRUE) {
                     echo "<script>
                     alert('Se agregó el rapero correctamente');
@@ -36,6 +37,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
                 }
+=======
+            if ($conn->query($sql) === TRUE) {
+                echo "<script>
+                alert('Se agregó el rapero correctamente');
+            window.location.href = '../index.php';
+                </script>";
+>>>>>>> 4ca00378e00ea8f4bfdf3cc48ff09275068efe28:RapConnect/RapConnect/formulario/procesar_agregar_rapero.php
             } else {
                 echo "El archivo es demasiado grande.";
             }
