@@ -9,7 +9,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $spotify = $conn->real_escape_string($_POST['spotify']);
         $youtube = $conn->real_escape_string($_POST['youtube']);
 
-        $sql = "UPDATE raperos SET nombre='$nombre', descripcion='$descripcion', spotify='$spotify', youtube='$youtube' WHERE id='$id'";
+        $image = $_FILES['new_image']['name'];
+        if ($image) {
+            $imageTmpName = $_FILES['new_image']['tmp_name'];
+            $imagePath = '../images/' . basename($image);
+            move_uploaded_file($imageTmpName, $imagePath);
+            $imageSql = ", image='$image'";
+        } else {
+            $imageSql = "";
+        }
+
+        $sql = "UPDATE raperos SET nombre='$nombre', descripcion='$descripcion', spotify='$spotify', youtube='$youtube' $imageSql WHERE id='$id'";
 
         if ($conn->query($sql) === TRUE) {
             echo "<script>

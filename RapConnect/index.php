@@ -20,12 +20,19 @@
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo '<div class="rapper">';
-                echo '<img src="images/' . $row['image'] . '" alt="' . $row['nombre'] . '">';
-                echo '<h2>' . $row['nombre'] . '</h2>';
-                echo '<div class="description">' . $row['descripcion'] . '</div>';
+                
+                // Mostrar imagen del rapero
+                if (!empty($row['image']) && file_exists('images/' . $row['image'])) {
+                    echo '<img src="images/' . htmlspecialchars($row['image']) . '" alt="' . htmlspecialchars($row['nombre']) . '">';
+                } else {
+                    echo '<img src="images/default.jpg" alt="Imagen no disponible">';
+                }
+                
+                echo '<h2>' . htmlspecialchars($row['nombre']) . '</h2>';
+                echo '<div class="description">' . htmlspecialchars($row['descripcion']) . '</div>';
                 echo '<br>';
-                echo '<a class="spotify" href="' . $row['spotify'] . '" target="_blank">Spotify</a> | ';
-                echo '<a class="youtube" href="' . $row['youtube'] . '" target="_blank">YouTube</a>';
+                echo '<a class="spotify" href="' . htmlspecialchars($row['spotify']) . '" target="_blank">Spotify</a> | ';
+                echo '<a class="youtube" href="' . htmlspecialchars($row['youtube']) . '" target="_blank">YouTube</a>';
                 echo '</div>';
             }
         } else {
@@ -34,9 +41,8 @@
 
         $conn->close(); // Cerrar conexión
         ?>
-
     </div>
-    
+
     <?php include 'includes/footer.php'; ?>
 </body>
 </html>

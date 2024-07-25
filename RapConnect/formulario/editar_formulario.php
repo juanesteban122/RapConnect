@@ -6,7 +6,6 @@
     <title>Modificar Datos del Rapero</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/editar_formulario.css">
-
 </head>
 <body>
     <?php include '../includes/header.php'; ?>
@@ -15,7 +14,6 @@
     include '../conexion.php';
     $id = $_GET['id'] ?? '';
 
-    // Consulta SQL para obtener los detalles del rapero
     if ($id) {
         $sql = "SELECT * FROM raperos WHERE id = ?";
         $stmt = $conn->prepare($sql);
@@ -32,7 +30,7 @@
 
     <div class="container">
         <h2>Modificar Rapero</h2>
-        <form action="procesar_editar_rapero.php" method="POST">
+        <form action="procesar_editar_rapero.php" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?php echo htmlspecialchars($rapero['id']); ?>">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
@@ -49,6 +47,12 @@
             <div class="form-group">
                 <label for="youtube">YouTube:</label>
                 <input type="text" class="form-control" id="youtube" name="youtube" value="<?php echo htmlspecialchars($rapero['youtube']); ?>">
+            </div>
+            <div class="form-group">
+                <label for="image">Imagen Actual:</label>
+                <img src="../images/<?php echo htmlspecialchars($rapero['image']); ?>" alt="Imagen del Rapero" style="max-width: 200px;">
+                <label for="new_image">Cambiar Imagen:</label>
+                <input type="file" class="form-control" id="new_image" name="new_image">
             </div>
             <button type="submit" class="btn btn-warning">Actualizar Rapero</button>
         </form>
