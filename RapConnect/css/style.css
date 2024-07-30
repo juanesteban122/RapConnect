@@ -116,7 +116,6 @@ h1 {
 
 img{
     width: 150px; /* Ajusta el tamaño según tus necesidades */
-            height: 150px; /* Ajusta el tamaño según tus necesidades */
-            border-radius: 50%;
-
+    height: 150px; /* Ajusta el tamaño según tus necesidades */
+    border-radius: 50%;
 }

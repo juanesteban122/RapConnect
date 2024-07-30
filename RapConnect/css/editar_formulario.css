@@ -83,3 +83,9 @@ label {
     border-color: #d39e00;
 }
 
+.btn-warning {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+

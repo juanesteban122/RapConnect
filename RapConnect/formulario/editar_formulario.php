@@ -56,6 +56,7 @@
             </div>
             <button type="submit" class="btn btn-warning">Actualizar Rapero</button>
         </form>
+        <br><br><br>
     </div>
 
     <?php include '../includes/footer.php'; ?>
