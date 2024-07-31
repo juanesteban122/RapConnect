@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header('Location: inicio_sesion/login.php');
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,6 +25,11 @@
     <a href="formulario/agregar_rapero.php" class="btn btn-primary" role="button">Agregar nuevo Rapero</a>
     <a href="formulario/editar.php" class="btn btn-warning" role="button">Modificar un Rapero</a>
     <a href="formulario/eliminar.php" class="btn btn-danger" role="button">Eliminar Rapero</a>
+
+    <a href="inicio_sesion/logout.php">Cerrar sesión</a>
+    
+
+
 </div>
 
 <?php include 'includes/footer.php'; ?>
