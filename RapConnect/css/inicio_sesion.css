@@ -2,21 +2,21 @@
     width: 100%;
     max-width: 400px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #333; /* Borde oscuro */
     border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+    background-color: #1E1E1E; /* Fondo gris oscuro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
 
     display: block;
     margin-right: auto;
     margin-left: auto;
-
+    justify-content: center;
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #FFCC00; /* Amarillo */
 }
 
 .form-group {
@@ -27,20 +27,23 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #FFCC00; /* Amarillo */
 }
 
 input[type="text"], input[type="password"] {
     width: 90%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ced4da;
     border-radius: 4px;
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto oscuro */
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #DC3545; /* Rojo */
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -49,5 +52,24 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #C82333; /* Rojo más oscuro */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%; /* Ancho menor en pantallas móviles */
+        max-width: 350px; /* Ancho máximo reducido para pantallas pequeñas */
+        padding: 15px; /* Padding reducido */
+    }
+
+    input[type="text"], input[type="password"], button {
+        font-size: 14px; /* Tamaño de fuente reducido en móviles */
+    }
+
+    /* Opcional: Reducir el tamaño del botón */
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
 }

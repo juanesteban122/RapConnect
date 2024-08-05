@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <?php include '../includes/header.php'; ?>
-
+<br><br><br>
     <div class="login-container">
         <h2>Login</h2>
         <?php if (isset($error)): ?>
