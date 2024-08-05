@@ -8,15 +8,24 @@ body {
 
 /* Estilo para el encabezado */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #333333; /* Gris oscuro */
     color: white;
+    padding: 1em 2em;
+}
+
+header .logo {
+    flex-grow: 1;
     text-align: center;
-    padding: 1em 0;
 }
 
 header a {
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: inherit; /* Hereda el color del texto del elemento padre */
+    display: flex;
+    align-items: center;
 }
 
 header a h1 {
@@ -29,7 +38,17 @@ header a:hover {
     color: #FFCC00; /* Cambia el color al pasar el ratón sobre el enlace */
 }
 
+header .seleccionF {
+    margin-left: auto;
+}
 
+header .icono {
+    width: 50px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 50px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para el pie de página */
 footer {
     background-color: #333333; /* Gris oscuro */
     color: white;

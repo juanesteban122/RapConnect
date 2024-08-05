@@ -36,7 +36,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include '../includes/header.php'; ?>
 <br><br><br>
     <div class="login-container">
-        <h2>Login</h2>
+        <h2>Inicio de sesion</h2>
+        <p style="color: #ffeca0;">IMPORTANTE: Solo las personas con una cuenta autorizada pueden acceder a la información de RapConnect.</p>
         <?php if (isset($error)): ?>
             <p style="color: red;"><?php echo $error; ?></p>
         <?php endif; ?>

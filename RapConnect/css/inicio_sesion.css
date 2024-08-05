@@ -37,7 +37,7 @@ input[type="text"], input[type="password"] {
     border: 1px solid #ced4da;
     border-radius: 4px;
     background-color: #fff; /* Fondo blanco */
-    color: #333; /* Texto oscuro */
+    color: #333333; /* Texto oscuro */
 }
 
 button {
