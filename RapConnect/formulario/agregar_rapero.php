@@ -42,7 +42,7 @@
             <button type="submit" class="btn btn-primary">Agregar Rapero</button>
         </form>
     </div>
-
+    <br><br><br><br><br>
     <?php include '../includes/footer.php'; ?>
 </body>
 </html>
