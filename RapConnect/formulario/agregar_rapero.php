@@ -6,7 +6,7 @@
     <title>Agregar Nuevo Rapero</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/agregar_rapero.css">
-    <script src="../js/agregar_rapero.js" defer></script> <!-- Archivo JavaScript agregado aquí -->
+    <script src="../js/validacion_agregar_rapero.js" defer></script> <!-- Archivo JavaScript agregado aquí -->
 </head>
 <body>
     <?php include '../includes/header.php'; ?>
