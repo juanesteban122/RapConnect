@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RapConnect</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="../js/buscador.js" ></script>
 </head>
 <body>
     <?php include 'includes/header.php'; ?>
+
+        <!-- Formulario de búsqueda -->
+        <div class="search-container">
+        <form id="searchForm">
+            <input type="text" id="searchQuery" placeholder="Buscar raperos..." />
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+
+
+
 
     <div class="rapper-list">
         <?php

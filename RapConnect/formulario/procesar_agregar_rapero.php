@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $response['message'] = 'Error: ' . $conn->error;
             }
         } else {
-            $response['message'] = 'Error con la imagen. Asegúrate de que sea una imagen válida y que no supere los 5 MB.';
+            $response['message'] = 'Error con la imagen. El formato de la imagen no es válido. Verifique, solo permiten JPG, PNG y GIF o que no supere los 5 MB.';
         }
     } else {
         $response['message'] = 'Todos los campos son obligatorios.';
