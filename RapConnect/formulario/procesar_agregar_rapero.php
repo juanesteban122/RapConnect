@@ -6,6 +6,8 @@ error_reporting(E_ALL);
 include '../conexion.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $response = ['success' => false, 'message' => ''];
+
     if (isset($_POST['nombre']) && isset($_POST['descripcion']) && isset($_POST['spotify']) && isset($_POST['youtube']) && isset($_FILES['image'])) {
         $nombre = $conn->real_escape_string($_POST['nombre']);
         $descripcion = $conn->real_escape_string($_POST['descripcion']);
@@ -30,23 +32,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql = "INSERT INTO raperos (nombre, descripcion, spotify, youtube, image) VALUES ('$nombre', '$descripcion', '$spotify', '$youtube', '$newImageName')";
 
             if ($conn->query($sql) === TRUE) {
-                echo "<script>
-                alert('Se agregó el rapero correctamente');
-                window.location.href = '../index.php';
-                </script>";
+                $response['success'] = true;
+                $response['message'] = 'Se agregó el rapero correctamente';
             } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
+                $response['message'] = 'Error: ' . $conn->error;
             }
         } else {
-            echo "Error con la imagen. Asegúrate de que sea una imagen válida y que no supere los 5 MB.";
+            $response['message'] = 'Error con la imagen. Asegúrate de que sea una imagen válida y que no supere los 5 MB.';
         }
     } else {
-        echo "Todos los campos son obligatorios.";
+        $response['message'] = 'Todos los campos son obligatorios.';
     }
 
     $conn->close();
+
+    // Devuelve la respuesta en formato JSON
+    header('Content-Type: application/json');
+    echo json_encode($response);
 }
 ?>
-
-
-

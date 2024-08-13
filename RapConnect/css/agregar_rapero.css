@@ -65,18 +65,17 @@
     margin-left: auto;
 }
 
-
-.error-message {
-    color: #856404; /* Color del texto amarillo oscuro */
-    background-color: #fff3cd; /* Fondo amarillo claro */
-    border: 1px solid #ffeeba; /* Borde amarillo pálido */
-    border-radius: 0.25rem; /* Bordes redondeados */
-    padding: 1rem; /* Espaciado interno */
-    margin-top: 0.5em; /* Espacio arriba del mensaje */
-    margin-bottom: 1rem; /* Espacio inferior */
-    font-size: 1.25rem; /* Tamaño de fuente aumentado */
-    display: none; /* Ocultar el recuadro por defecto */
-    text-align: center; /* Alinea el texto al centro */    
-    width: 100%; /* Ancho completo del contenedor */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+.error-box {
+    display: none; /* Ocultar el cuadro por defecto */
+    width: 350px; /* Cambia el ancho a 300 píxeles */
+    /* Alternativamente, usa un porcentaje */
+    /* width: 50%; */
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #dc3545;
+    border-radius: 0.25rem;
+    background-color: #f8d7da;
+    color: #721c24;
+    font-size: 1rem;
+    text-align: center;
 }

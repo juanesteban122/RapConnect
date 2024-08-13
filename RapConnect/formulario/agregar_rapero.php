@@ -39,6 +39,10 @@
                 <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
                 <span id="imageError" class="error-message"></span> <!-- Contenedor para el mensaje de error -->
             </div>
+
+            <div id="errorBox" class="error-box"></div> <!-- Cuadro de error -->
+            <br>
+                
             <button type="submit" class="btn btn-primary">Agregar Rapero</button>
         </form>
     </div>
