@@ -111,18 +111,26 @@ h1 {
 
 .rapper a {
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px; /* Aumenta el padding para agrandar el recuadro */
+    display: inline-flex; /* Para centrar el contenido */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    border-radius: 50%; /* Forma circular para los íconos */
+    width: 50px; /* Tamaño del contenedor del ícono */
+    height: 50px; /* Tamaño del contenedor del ícono */
+    font-size: 24px; /* Ajusta el tamaño del ícono */
+    line-height: 50px; /* Alinea el ícono verticalmente dentro del contenedor */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Agrega la transición para el color de fondo y del texto */
 }
 
 .rapper a.spotify {
     color: #1DB954; /* Verde de Spotify */
-    border: 1px solid #1DB954; /* Verde de Spotify */
-    border-radius: 50%;
+    border: 2px solid #1DB954; /* Verde de Spotify */
 }
 
 .rapper a.youtube {
     color: #FF0000; /* Rojo de YouTube */
-    border: 1px solid #FF0000; /* Rojo de YouTube */
+    border: 2px solid #FF0000; /* Rojo de YouTube */
 }
 
 .rapper a:hover {
@@ -131,16 +139,23 @@ h1 {
 
 .rapper a.spotify:hover {
     color: #ffffff; /* Blanco */
-    background-color: #1DB954; /* Verde de Spotify */
+    background-color: #ffffff; /* Verde de Spotify */
 }
 
 .rapper a.youtube:hover {
     color: #ffffff; /* Blanco */
-    background-color: #FF0000; /* Rojo de YouTube */
+    background-color: #ffffff; /* Rojo de YouTube */
 }
 
 img {
     width: 150px; /* Ajusta el tamaño según tus necesidades */
     height: 150px; /* Ajusta el tamaño según tus necesidades */
     border-radius: 50%;
+}
+
+
+
+
+/*Buscador de raperos*/
+.search-container .searchForm{
 }
