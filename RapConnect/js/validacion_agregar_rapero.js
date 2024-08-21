@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function (event) {
         event.preventDefault(); // Previene el envío tradicional del formulario
 
         let isValid = true;
@@ -77,18 +77,18 @@ document.addEventListener('DOMContentLoaded', function() {
             method: 'POST',
             body: formData
         })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                alert(data.message); // Muestra un mensaje de éxito
-                window.location.href = '../index.php'; // Redirige a la página de inicio
-            } else {
-                errorBox.textContent = data.message; // Muestra el mensaje de error en el cuadro de error
-                errorBox.style.display = 'block'; // Muestra el cuadro de error
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(data.message); // Muestra un mensaje de éxito
+                    window.location.href = '../index.php'; // Redirige a la página de inicio
+                } else {
+                    errorBox.textContent = data.message; // Muestra el mensaje de error en el cuadro de error
+                    errorBox.style.display = 'block'; // Muestra el cuadro de error
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
     });
 });

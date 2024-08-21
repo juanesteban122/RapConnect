@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/eliminar.css">
 </head>
+
 <body>
     <?php include '../includes/header.php'; ?>
 
@@ -24,7 +26,7 @@
             while ($row = $result->fetch_assoc()) {
                 echo '<div class="form-group">';
                 echo '<label>' . $row['nombre'] . '</label>';
-                echo '<input type="hidden" name="id" value="' . $row['id'] . '">';  
+                echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
                 echo '<button type="submit" class="btn btn-danger">Eliminar</button>';
                 echo '</div>';
             }
@@ -36,10 +38,8 @@
         $conn->close(); // Cerrar conexión
         ?>
     </div>
-    <br><br><br><br><br><br>   
+    <br><br><br><br><br><br>
     <?php include '../includes/footer.php'; ?>
 </body>
+
 </html>
-
-
-

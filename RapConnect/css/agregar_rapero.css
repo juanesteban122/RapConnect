@@ -3,8 +3,10 @@
 /* Contenedor del formulario */
 .form-control {
     display: block;
-    width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    width: 100%;
+    /* Ocupa el 100% del ancho del contenedor */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el ancho total */
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -53,9 +55,12 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el contenido horizontalmente */
-    min-height: 80vh; /* Ocupa el 80% de la altura de la pantalla */
-    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    min-height: 80vh;
+    /* Ocupa el 80% de la altura de la pantalla */
+    margin-top: 20px;
+    /* Ajusta el margen superior según sea necesario */
 }
 
 
@@ -66,8 +71,10 @@
 }
 
 .error-box {
-    display: none; /* Ocultar el cuadro por defecto */
-    width: 350px; /* Cambia el ancho a 300 píxeles */
+    display: none;
+    /* Ocultar el cuadro por defecto */
+    width: 350px;
+    /* Cambia el ancho a 300 píxeles */
     /* Alternativamente, usa un porcentaje */
     /* width: 50%; */
     margin-top: 1rem;

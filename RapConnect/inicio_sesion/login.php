@@ -25,6 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,9 +33,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/inicio_sesion.css">
 </head>
+
 <body>
     <?php include '../includes/header.php'; ?>
-<br><br><br>
+    <br><br><br>
     <div class="login-container">
         <h2>Inicio de sesion</h2>
         <p style="color: #ffeca0;">IMPORTANTE: Solo las personas con una cuenta autorizada pueden acceder a la información de RapConnect.</p>
@@ -56,4 +58,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <?php include '../includes/footer.php'; ?>
 </body>
+
 </html>

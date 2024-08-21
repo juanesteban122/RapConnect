@@ -3,8 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Fondo negro */
-    color: #FFFFFF; /* Texto blanco */
+    background-color: #121212;
+    /* Fondo negro */
+    color: #FFFFFF;
+    /* Texto blanco */
 }
 
 /* Contenedor del formulario */
@@ -14,16 +16,20 @@ body {
     align-items: center;
     flex-wrap: wrap;
     background-color: #351316;
-    border-radius: 50px; /* Bordes redondeados */
+    border-radius: 50px;
+    /* Bordes redondeados */
     max-width: 300px;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    margin-top: 20px;
+    /* Ajusta el margen superior según sea necesario */
 }
 
 /* Estilo del título */
 h2 {
     margin-bottom: 20px;
-    color: #2ecece; /* Amarillo */
+    color: #2ecece;
+    /* Amarillo */
     font-size: 1.5rem;
 }
 
@@ -34,7 +40,8 @@ h2 {
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
-    width: 100%; /* Asegura que el grupo de formulario ocupe el ancho completo del contenedor */
+    width: 100%;
+    /* Asegura que el grupo de formulario ocupe el ancho completo del contenedor */
 }
 
 /* Estilo para las etiquetas */
@@ -42,14 +49,17 @@ label {
     display: block;
     font-size: 1rem;
     margin-bottom: 5px;
-    color: #2ecece; /* Amarillo */
+    color: #2ecece;
+    /* Amarillo */
 }
 
 /* Estilo para los campos de entrada */
 .form-control {
     display: block;
-    width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    max-width: 100%; /* Asegura que no se haga más grande que el contenedor */
+    width: 100%;
+    /* Ocupa el 100% del ancho del contenedor */
+    max-width: 100%;
+    /* Asegura que no se haga más grande que el contenedor */
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -58,7 +68,8 @@ label {
     background-color: #fff;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el ancho total */
 }
 
 /* Estilo para los botones */
@@ -78,14 +89,18 @@ label {
 
 .btn-warning {
     color: #212529;
-    background-color: #2ecece; /* Amarillo */
-    border-color: #2ecece; /* Amarillo */
+    background-color: #2ecece;
+    /* Amarillo */
+    border-color: #2ecece;
+    /* Amarillo */
 }
 
 .btn-warning:hover {
     color: #212529;
-    background-color: #E0A800; /* Amarillo más oscuro */
-    border-color: #D39E00; /* Amarillo más oscuro */
+    background-color: #E0A800;
+    /* Amarillo más oscuro */
+    border-color: #D39E00;
+    /* Amarillo más oscuro */
 }
 
 .btn-warning {
@@ -96,17 +111,26 @@ label {
 
 /* Estilo para el botón de eliminación */
 .btn-danger {
-    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
-    padding: 10px 20px; /* Espaciado interno del botón */
+    margin-top: 10px;
+    /* Ajusta el margen superior según sea necesario */
+    padding: 10px 20px;
+    /* Espaciado interno del botón */
     border: none;
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #DC3545; /* Rojo */
-    color: white; /* Color del texto del botón */
-    font-size: 1em; /* Tamaño de fuente del texto del botón */
-    cursor: pointer; /* Cursor tipo puntero al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    background-color: #DC3545;
+    /* Rojo */
+    color: white;
+    /* Color del texto del botón */
+    font-size: 1em;
+    /* Tamaño de fuente del texto del botón */
+    cursor: pointer;
+    /* Cursor tipo puntero al pasar sobre el botón */
+    transition: background-color 0.3s ease;
+    /* Transición para el color de fondo */
 }
 
 .btn-danger:hover {
-    background-color: #C82333; /* Rojo más oscuro en hover */
+    background-color: #C82333;
+    /* Rojo más oscuro en hover */
 }

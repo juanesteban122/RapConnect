@@ -3,8 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Negro */
-    color: #FFFFFF; /* Blanco */
+    background-color: #121212;
+    /* Negro */
+    color: #FFFFFF;
+    /* Blanco */
 }
 
 /* Contenedor del formulario */
@@ -20,13 +22,15 @@ body {
 /* Estilo del título */
 h2 {
     margin-bottom: 20px;
-    color: #2ecece; /* Amarillo */
+    color: #2ecece;
+    /* Amarillo */
 }
 
 /* Estilo para el grupo de formulario */
 .form-group {
     width: 100%;
-    max-width: 500px; /* Ancho máximo del grupo de formulario */
+    max-width: 500px;
+    /* Ancho máximo del grupo de formulario */
     margin-bottom: 15px;
 }
 
@@ -40,8 +44,10 @@ label {
 /* Estilo para el campo de selección */
 .form-control {
     display: block;
-    width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    max-width: 100%; /* Asegura que no se haga más grande que el contenedor */
+    width: 100%;
+    /* Ocupa el 100% del ancho del contenedor */
+    max-width: 100%;
+    /* Asegura que no se haga más grande que el contenedor */
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -50,7 +56,8 @@ label {
     background-color: #fff;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el ancho total */
 }
 
 /* Estilo para los botones */
@@ -70,14 +77,18 @@ label {
 
 .btn-warning {
     color: #212529;
-    background-color: #2ecece; /* Amarillo */
-    border-color: #2ecece; /* Amarillo */
+    background-color: #2ecece;
+    /* Amarillo */
+    border-color: #2ecece;
+    /* Amarillo */
 }
 
 .btn-warning:hover {
     color: #212529;
-    background-color: #185f5f; /* Amarillo más oscuro */
-    border-color: #185f5f; /* Amarillo más oscuro */
+    background-color: #185f5f;
+    /* Amarillo más oscuro */
+    border-color: #185f5f;
+    /* Amarillo más oscuro */
 }
 
 .btn-warning {

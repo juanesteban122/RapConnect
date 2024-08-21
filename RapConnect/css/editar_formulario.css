@@ -3,8 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Fondo negro */
-    color: #FFFFFF; /* Texto blanco */
+    background-color: #121212;
+    /* Fondo negro */
+    color: #FFFFFF;
+    /* Texto blanco */
 }
 
 /* Contenedor del formulario */
@@ -14,22 +16,27 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #1E1E1E; /* Fondo gris oscuro */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Sombra más intensa */
+    background-color: #1E1E1E;
+    /* Fondo gris oscuro */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    /* Sombra más intensa */
 }
 
 /* Estilo del título */
 h2 {
     margin-bottom: 20px;
-    color: #2ecece; /* Amarillo */
+    color: #2ecece;
+    /* Amarillo */
     font-size: 1.5rem;
 }
 
 /* Estilo para el grupo de formulario */
 .form-group {
     width: 100%;
-    max-width: 500px; /* Ancho máximo del grupo de formulario */
+    max-width: 500px;
+    /* Ancho máximo del grupo de formulario */
     margin-bottom: 15px;
 }
 
@@ -38,14 +45,17 @@ label {
     display: block;
     font-size: 1rem;
     margin-bottom: 5px;
-    color: #2ecece; /* Amarillo */
+    color: #2ecece;
+    /* Amarillo */
 }
 
 /* Estilo para los campos de entrada */
 .form-control {
     display: block;
-    width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    max-width: 100%; /* Asegura que no se haga más grande que el contenedor */
+    width: 100%;
+    /* Ocupa el 100% del ancho del contenedor */
+    max-width: 100%;
+    /* Asegura que no se haga más grande que el contenedor */
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -54,7 +64,8 @@ label {
     background-color: #fff;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el ancho total */
 }
 
 /* Estilo para los botones */
@@ -74,14 +85,18 @@ label {
 
 .btn-warning {
     color: #212529;
-    background-color: #2ecece; /* Amarillo */
-    border-color: #2ecece; /* Amarillo */
+    background-color: #2ecece;
+    /* Amarillo */
+    border-color: #2ecece;
+    /* Amarillo */
 }
 
 .btn-warning:hover {
     color: #212529;
-    background-color: #185f5f; /* Amarillo más oscuro */
-    border-color: #185f5f; /* Amarillo más oscuro */
+    background-color: #185f5f;
+    /* Amarillo más oscuro */
+    border-color: #185f5f;
+    /* Amarillo más oscuro */
 }
 
 .btn-warning {

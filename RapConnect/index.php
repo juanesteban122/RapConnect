@@ -16,16 +16,14 @@
 
     <!-- Formulario de búsqueda -->
     <div class="search-container">
-    <form class="form">
-        <input type="text" id="searchInput" required>
-        <label class="lbl-nombre">
-            <span class="text-nomb">Buscar raperos...</span>
-        </label>
-    </form>
-</div>
-
-
-
+        <form class="form">
+            <input type="text" id="searchInput" required>
+            <label class="lbl-nombre">
+                <span class="text-nomb">Buscar raperos...</span>
+            </label>
+        </form>
+    </div>
+    <!-- Formulario de búsqueda -->
     <br><br><br>
 
     <div class="rapper-list">

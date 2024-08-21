@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../css/agregar_rapero.css">
     <script src="../js/validacion_agregar_rapero.js" defer></script> <!-- Archivo JavaScript agregado aquí -->
 </head>
+
 <body>
     <?php include '../includes/header.php'; ?>
 
@@ -42,11 +44,12 @@
 
             <div id="errorBox" class="error-box"></div> <!-- Cuadro de error -->
             <br>
-                
+
             <button type="submit" class="btn btn-primary">Agregar Rapero</button>
         </form>
     </div>
     <br><br><br><br><br>
     <?php include '../includes/footer.php'; ?>
 </body>
+
 </html>

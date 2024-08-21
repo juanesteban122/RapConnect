@@ -2,31 +2,39 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Negro */
-    color: #FFFFFF; /* Blanco */
+    background-color: #121212;
+    /* Negro */
+    color: #FFFFFF;
+    /* Blanco */
 }
 
 /* Estilo para el encabezado */
 header {
-    background-color: #333333; /* Gris oscuro */
+    background-color: #333333;
+    /* Gris oscuro */
     color: white;
     text-align: center;
     padding: 1em 0;
 }
 
 header a {
-    color: white; /* Elimina el subrayado del enlace */
-    color: inherit; /* Hereda el color del texto del elemento padre */
+    color: white;
+    /* Elimina el subrayado del enlace */
+    color: inherit;
+    /* Hereda el color del texto del elemento padre */
 }
 
 header a {
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
     color: white;
 }
 
 header a:hover {
-    text-decoration: none; /* Elimina el subrayado cuando se pasa el ratón sobre el enlace */
-    color: #2ecece; /* Cambia el color al pasar el ratón sobre el enlace */
+    text-decoration: none;
+    /* Elimina el subrayado cuando se pasa el ratón sobre el enlace */
+    color: #2ecece;
+    /* Cambia el color al pasar el ratón sobre el enlace */
 }
 
 .centered-container {
@@ -34,7 +42,8 @@ header a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh; /* Ocupa la mitad de la altura de la pantalla */
+    height: 50vh;
+    /* Ocupa la mitad de la altura de la pantalla */
     text-align: center;
 }
 
@@ -43,7 +52,8 @@ header a:hover {
 }
 
 footer {
-    background-color: #333333; /* Gris oscuro */
+    background-color: #333333;
+    /* Gris oscuro */
     color: white;
     text-align: center;
     padding: 1px;
@@ -70,73 +80,103 @@ footer {
 
 .btn-primary {
     color: #fff;
-    background-color: #0011ff; /* Rojo */
-    border-color: #0011ff; /* Rojo */
-    text-decoration: none; /* Elimina el subrayado cuando se pasa el ratón sobre el enlace */
+    background-color: #0011ff;
+    /* Rojo */
+    border-color: #0011ff;
+    /* Rojo */
+    text-decoration: none;
+    /* Elimina el subrayado cuando se pasa el ratón sobre el enlace */
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #6a74fa; /* Rojo más oscuro */
-    border-color: #6a74fa; /* Rojo más oscuro */
+    background-color: #6a74fa;
+    /* Rojo más oscuro */
+    border-color: #6a74fa;
+    /* Rojo más oscuro */
 }
 
-.btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 51, 51, 0.5); /* Sombra roja */
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 51, 51, 0.5);
+    /* Sombra roja */
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary.disabled,
+.btn-primary:disabled {
     color: #fff;
-    background-color: #FF3333; /* Rojo */
-    border-color: #FF3333; /* Rojo */
+    background-color: #FF3333;
+    /* Rojo */
+    border-color: #FF3333;
+    /* Rojo */
 }
 
 /*BOTON DE MODIFICAR RAPERO*/
 /* Estilo base para todos los botones */
 .btn-warning {
     color: #212529;
-    background-color: #FFC107; /* Amarillo */
-    border-color: #FFC107; /* Amarillo */
-    text-decoration: none; /* Elimina el subrayado cuando se pasa el ratón sobre el enlace */
+    background-color: #FFC107;
+    /* Amarillo */
+    border-color: #FFC107;
+    /* Amarillo */
+    text-decoration: none;
+    /* Elimina el subrayado cuando se pasa el ratón sobre el enlace */
 }
 
 .btn-warning:hover {
     color: #212529;
-    background-color: #E0A800; /* Amarillo más oscuro */
-    border-color: #D39E00; /* Amarillo más oscuro */
+    background-color: #E0A800;
+    /* Amarillo más oscuro */
+    border-color: #D39E00;
+    /* Amarillo más oscuro */
 }
 
-.btn-warning:focus, .btn-warning.focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5); /* Sombra amarilla */
+.btn-warning:focus,
+.btn-warning.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+    /* Sombra amarilla */
 }
 
-.btn-warning.disabled, .btn-warning:disabled {
+.btn-warning.disabled,
+.btn-warning:disabled {
     color: #212529;
-    background-color: #FFC107; /* Amarillo */
-    border-color: #FFC107; /* Amarillo */
+    background-color: #FFC107;
+    /* Amarillo */
+    border-color: #FFC107;
+    /* Amarillo */
 }
 
 /*BOTON DE ELIMINAR RAPERO*/
 /* Estilo específico para el botón de peligro */
 .btn-danger {
     color: #fff;
-    background-color: #FF0000; /* Rojo */
-    border-color: #FF0000; /* Rojo */
-    text-decoration: none; /* Elimina el subrayado cuando se pasa el ratón sobre el enlace */
+    background-color: #FF0000;
+    /* Rojo */
+    border-color: #FF0000;
+    /* Rojo */
+    text-decoration: none;
+    /* Elimina el subrayado cuando se pasa el ratón sobre el enlace */
 }
 
 .btn-danger:hover {
     color: #fff;
-    background-color: #C82333; /* Rojo más oscuro */
-    border-color: #BD2130; /* Rojo más oscuro */
+    background-color: #C82333;
+    /* Rojo más oscuro */
+    border-color: #BD2130;
+    /* Rojo más oscuro */
 }
 
-.btn-danger:focus, .btn-danger.focus {
-    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); /* Sombra roja */
+.btn-danger:focus,
+.btn-danger.focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+    /* Sombra roja */
 }
 
-.btn-danger.disabled, .btn-danger:disabled {
+.btn-danger.disabled,
+.btn-danger:disabled {
     color: #fff;
-    background-color: #FF0000; /* Rojo */
-    border-color: #FF0000; /* Rojo */
+    background-color: #FF0000;
+    /* Rojo */
+    border-color: #FF0000;
+    /* Rojo */
 }
