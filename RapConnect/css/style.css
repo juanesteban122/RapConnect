@@ -35,7 +35,7 @@ header a h1 {
 
 header a:hover {
     text-decoration: none; /* Elimina el subrayado cuando se pasa el ratón sobre el enlace */
-    color: #FFCC00; /* Cambia el color al pasar el ratón sobre el enlace */
+    color: #2ecece; /* Cambia el color al pasar el ratón sobre el enlace */
 }
 
 header .seleccionF {
@@ -64,7 +64,7 @@ footer {
 h1 {
     text-align: center;
     margin-top: 20px;
-    color: #FFCC00; /* Amarillo */
+    color: #2ecece; /* Azul */
 }
 
 .rapper-list {
@@ -76,7 +76,7 @@ h1 {
 
 .rapper {
     background-color: #1E1E1E; /* Gris muy oscuro */
-    border: 1px solid #ffcc00; /* Amarillo */
+    border: 1px solid #2ecece; /* Azul */
     margin: 10px;
     padding: 10px;
     width: 250px;
@@ -100,7 +100,7 @@ h1 {
 .rapper h2 {
     font-size: 1.5em;
     margin: 0.5em 0;
-    color: #FFCC00; /* Amarillo */
+    color: #2ecece; /* Azul */
 }
 
 .rapper .links {
@@ -157,5 +157,75 @@ img {
 
 
 /*Buscador de raperos*/
-.search-container .searchForm{
+
+.search-container   {
+    width: 20%; /* O cualquier ancho que desees */
+    margin: 0 auto; /* Esto centra horizontalmente */
+
+}
+
+.form {
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.form input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 5px;
+    border: none;
+    outline: 0px;
+}
+
+.form .lbl-nombre {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.form .lbl-nombre:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-nomb {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.form input:focus + .lbl-nombre .text-nomb,
+.form input:valid + .lbl-nombre .text-nomb {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form input:focus + .lbl-nombre:after,
+.form input:valid + .lbl-nombre:after {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .form {
+        width: 85%;
+    }
 }

@@ -22,7 +22,7 @@ body {
 /* Estilo del título */
 h2 {
     margin-bottom: 20px;
-    color: #FFCC00; /* Amarillo */
+    color: #2ecece; /* Amarillo */
     font-size: 1.5rem;
 }
 
@@ -38,7 +38,7 @@ label {
     display: block;
     font-size: 1rem;
     margin-bottom: 5px;
-    color: #FFCC00; /* Amarillo */
+    color: #2ecece; /* Amarillo */
 }
 
 /* Estilo para los campos de entrada */
@@ -74,14 +74,14 @@ label {
 
 .btn-warning {
     color: #212529;
-    background-color: #FFCC00; /* Amarillo */
-    border-color: #FFCC00; /* Amarillo */
+    background-color: #2ecece; /* Amarillo */
+    border-color: #2ecece; /* Amarillo */
 }
 
 .btn-warning:hover {
     color: #212529;
-    background-color: #E0A800; /* Amarillo más oscuro */
-    border-color: #D39E00; /* Amarillo más oscuro */
+    background-color: #185f5f; /* Amarillo más oscuro */
+    border-color: #185f5f; /* Amarillo más oscuro */
 }
 
 .btn-warning {

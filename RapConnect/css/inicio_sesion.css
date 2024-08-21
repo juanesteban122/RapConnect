@@ -16,7 +16,7 @@
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #FFCC00; /* Amarillo */
+    color: #2ecece; /* Amarillo */
 }
 
 .form-group {
@@ -27,7 +27,7 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #FFCC00; /* Amarillo */
+    color: #2ecece; /* Amarillo */
 }
 
 input[type="text"], input[type="password"] {

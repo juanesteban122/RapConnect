@@ -16,8 +16,14 @@
 
     <!-- Formulario de búsqueda -->
     <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Buscar raperos...">
-    </div>
+    <form class="form">
+        <input type="text" id="searchInput" required>
+        <label class="lbl-nombre">
+            <span class="text-nomb">Buscar raperos...</span>
+        </label>
+    </form>
+</div>
+
 
 
     <br><br><br>

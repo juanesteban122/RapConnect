@@ -26,7 +26,7 @@ header a {
 
 header a:hover {
     text-decoration: none; /* Elimina el subrayado cuando se pasa el ratón sobre el enlace */
-    color: #FFCC00; /* Cambia el color al pasar el ratón sobre el enlace */
+    color: #2ecece; /* Cambia el color al pasar el ratón sobre el enlace */
 }
 
 .centered-container {
