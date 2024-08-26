@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="../css/style.css"> <!-- Incluye la hoja de estilos principal -->
     <link rel="stylesheet" href="../css/editar_formulario.css"> <!-- Incluye la hoja de estilos específica para el formulario de edición -->
     <script src="../js/validacion_editar_formulario.js"></script> <!-- Incluye el archivo JavaScript para la validación del formulario -->
+    <script src="../js/session_timer.js" defer></script>
+
 </head>
 <body>
-    <?php include '../includes/header.php'; ?> <!-- Incluye el archivo del encabezado de la página -->
+    <?php include '../includes/header.php'; 
+        include '../includes/session_timeout.php'; // Incluir la gestión de tiempo de inactividad
+        ?> <!-- Incluye el archivo del encabezado de la página -->
 
     <?php
     include '../conexion.php'; // Incluye el archivo de conexión a la base de datos

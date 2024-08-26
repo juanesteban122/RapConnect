@@ -1,5 +1,7 @@
 <?php
 session_start();
+include 'includes/session_timeout.php'; // Incluye el archivo para manejar el tiempo de inactividad
+
 if (!isset($_SESSION['user_id'])) {
     header('Location: inicio_sesion/login.php');
     exit;
@@ -15,6 +17,7 @@ if (!isset($_SESSION['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilo_seleccion_formulario.css">
+    <script src="../js/session_timer.js"></script>
     <title>RapConnect</title>
 </head>
 

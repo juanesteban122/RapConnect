@@ -6,9 +6,13 @@
     <title>Editar Rapero</title>
     <link rel="stylesheet" href="../css/style.css"> <!-- Incluye la hoja de estilos principal -->
     <link rel="stylesheet" href="../css/seleccion_editar.css"> <!-- Incluye la hoja de estilos específica para esta página -->
+    <script src="../js/session_timer.js" defer></script>
+
 </head>
 <body>
-    <?php include '../includes/header.php'; ?> <!-- Incluye el archivo del encabezado de la página -->
+    <?php include '../includes/header.php'; 
+    include '../includes/session_timeout.php'; // Incluir la gestión de tiempo de inactividad
+    ?> <!-- Incluye el archivo del encabezado de la página -->
 
     <div class="container"> <!-- Contenedor principal para el formulario -->
         <h2>Modificar Rapero</h2>

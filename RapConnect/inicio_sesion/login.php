@@ -32,6 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>RapConnect - Login</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/inicio_sesion.css">
+    <script src="../js/alerta.js" defer></script> <!-- Asegúrate de incluir el script aquí -->
+
 </head>
 
 <body>

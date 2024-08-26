@@ -7,10 +7,14 @@
     <title>Eliminar Rapero</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/eliminar.css">
+    <script src="../js/session_timer.js" defer></script>
+
 </head>
 
 <body>
-    <?php include '../includes/header.php'; ?>
+    <?php include '../includes/header.php'; 
+    include '../includes/session_timeout.php'; // Incluir la gestión de tiempo de inactividad
+    ?>
 
     <div class="container">
         <h2>Eliminar Rapero</h2>

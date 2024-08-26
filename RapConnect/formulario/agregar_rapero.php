@@ -1,3 +1,9 @@
+<?php
+session_start();
+include '../includes/session_timeout.php'; // Asegúrate de que esta línea esté incluida al inicio
+include '../conexion.php';
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,10 +14,15 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/agregar_rapero.css">
     <script src="../js/validacion_agregar_rapero.js" defer></script> <!-- Archivo JavaScript agregado aquí -->
+    <script src="../js/session_timer.js"></script>
+
 </head>
 
 <body>
-    <?php include '../includes/header.php'; ?>
+    <?php include '../includes/header.php'; 
+        include '../includes/session_timeout.php'; // Incluir la gestión de tiempo de inactividad
+
+    ?>
 
     <div class="container">
         <h2>Agregar Nuevo Rapero</h2>
