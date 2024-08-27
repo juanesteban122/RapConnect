@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 // Establecer el tiempo máximo de inactividad en segundos (e.g., 1800 segundos = 30 minutos)
-$tiempo_maximo_inactividad = 10;
+$tiempo_maximo_inactividad = 1800;
 
 if (isset($_SESSION['LAST_ACTIVITY'])) {
     // Calcular el tiempo de inactividad
