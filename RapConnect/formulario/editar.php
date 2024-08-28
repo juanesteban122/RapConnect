@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="../css/style.css"> <!-- Incluye la hoja de estilos principal -->
     <link rel="stylesheet" href="../css/seleccion_editar.css"> <!-- Incluye la hoja de estilos específica para esta página -->
     <script src="../js/session_timer.js" defer></script>
-
 </head>
 <body>
-    <?php include '../includes/header.php'; 
+    <?php 
+    include '../includes/header.php'; 
     include '../includes/session_timeout.php'; // Incluir la gestión de tiempo de inactividad
     ?> <!-- Incluye el archivo del encabezado de la página -->
 
@@ -33,7 +33,7 @@
                         while ($row = $result->fetch_assoc()) {
                             // Crea una opción en el selector para cada rapero
                             // Codifica el ID en Base64 para ocultar el valor real en la URL
-                            echo '<option value="' . base64_encode($row['id']) . '">' . $row['nombre'] . '</option>';
+                            echo '<option value="' . base64_encode($row['id']) . '">' . htmlspecialchars($row['nombre']) . '</option>';
                         }
                     }
                     $conn->close(); // Cierra la conexión a la base de datos
